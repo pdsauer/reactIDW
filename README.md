@@ -9,7 +9,7 @@ Project-Name: CineTicket
 
 Potential Client: Cinemas which need a tool to manage their online ticket sales
 
-Requirements: node.js
+Requirements: node.js, API (selfmade)
 
 
 DB: 
