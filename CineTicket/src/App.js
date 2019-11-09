@@ -2,7 +2,8 @@ import React from 'react';
 import './reset.css';
 import './main.css';
 import MovieSelection from './Components/selection';
-import MovieSelection from './Components/seat';
+import SeatSelection from './Components/seat';
+import TicketSelection from './Components/ticket';
 
 class App extends React.Component {
   constructor() {
@@ -20,18 +21,9 @@ class App extends React.Component {
           </div>
         </nav>
         <section id="content" className="contentArea">
-          <section className="headline">
-            <h2>Choose your <span className="highlightWord">movie</span></h2>
-          </section>
-
-          <MovieSelection product={this.state.product}/>
-
-          <section className="headline">
-            <h2>Choose your <span className="highlightWord">seat</span></h2>
-          </section>
-          <section className="headline">
-            <h2>Get your <span className="highlightWord">tickets</span></h2>
-          </section>
+          <MovieSelection/>
+          <SeatSelection/>
+          <TicketSelection/> 
         </section>
       </div>
     )
