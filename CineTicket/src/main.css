@@ -94,7 +94,7 @@ select option:hover {
     flex-direction: row;
 }
 
-.flexer select {
+#cinema .flexer select {
     width: 4rem;
     margin-right: 2rem;
 }
