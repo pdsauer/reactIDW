@@ -31,6 +31,9 @@ export default class MovieSelection extends React.Component {
                 <div>
                     
                 </div>
+                <div>
+                    <img src="/minus icon.png" alt="delete"/>
+                </div>
             </section>
 
         </div>);
