@@ -98,3 +98,6 @@ select option:hover {
     width: 4rem;
     margin-right: 2rem;
 }
+.leftrow, .rightrow{
+    width: 50%;
+}

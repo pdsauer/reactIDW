@@ -21,17 +21,18 @@ class App extends React.Component {
             </div>
           </div>
         </nav>
-        <section id="content" className="contentArea">
+        <section id="content" className="contentArea flexer">
         <div className="leftrow">
+           <MovieSelection/>
+          <SeatSelection/>
+          <TicketSelection/> 
           
           </div>
           <div className="rightrow">
-          
-          </div>
-          <MovieSelection/>
-          <SeatSelection/>
-          <TicketSelection/> 
           <Cinema/>
+          </div>
+          
+         
         </section>
       </div>
     )
