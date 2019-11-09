@@ -4,6 +4,7 @@ import './main.css';
 import MovieSelection from './Components/selection';
 import SeatSelection from './Components/seat';
 import TicketSelection from './Components/ticket';
+import Cinema from './Components/cinema';
 
 class App extends React.Component {
   constructor() {
@@ -21,9 +22,11 @@ class App extends React.Component {
           </div>
         </nav>
         <section id="content" className="contentArea">
+
           <MovieSelection/>
           <SeatSelection/>
           <TicketSelection/> 
+          <Cinema/>
         </section>
       </div>
     )
