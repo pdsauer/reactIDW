@@ -163,4 +163,12 @@ margin-right: 2rem;
   .component{
       margin-bottom: 2rem;
   }
+  .canvaswrapper{
+      text-align: right;
+  }
+  #cinema-canvas{
+     
+      width: 23rem;
+      max-width: 100%;
+  }
  

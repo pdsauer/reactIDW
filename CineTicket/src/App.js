@@ -1,6 +1,7 @@
 import React from 'react';
 import './reset.css';
 import './main.css';
+import './responsive.css';
 import MovieSelection from './Components/selection';
 import SeatSelection from './Components/seat';
 import TicketSelection from './Components/ticket';
