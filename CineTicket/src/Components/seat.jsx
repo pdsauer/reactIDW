@@ -10,7 +10,29 @@ export default class MovieSelection extends React.Component {
         return (<div>
             <section className="headline">
                 <h2>Choose your <span className="highlightWord">seat</span></h2>
+                
             </section>
+
+            <section class="flexer">  
+                <div>      
+                    <label htmlFor="rowDropdown">row</label>
+                    <select name="rowDropdown" id="rowDropdown">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </div>
+                <div>
+                    <label htmlFor="numberDropdown">number</label>
+                    <select name="numberDropdown" id="numberDropdown">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </div>
+                <div>
+                    
+                </div>
+            </section>
+
         </div>);
     }
 }

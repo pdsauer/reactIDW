@@ -88,3 +88,13 @@ select option:hover {
     top: 10px;
     color: #fff;
 }
+
+.flexer{
+    display: flex;
+    flex-direction: row;
+}
+
+.flexer select {
+    width: 4rem;
+    margin-right: 2rem;
+}
