@@ -122,6 +122,10 @@ select option:hover {
   }
   .icon{
       width: 1.5rem;
+     
+  }
+  .icon:hover{
+       filter: brightness(0.4);
   }
 .pointer{
 cursor: pointer;
@@ -133,4 +137,29 @@ cursor: pointer;
       display: inline-block;
 width: 4rem;
 margin-right: 2rem;
+  }
+
+  .addbtn{
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      outline: none;
+      border: none;
+      text-decoration: none;
+      background-color: var(--lightgrey);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 0.9rem;
+      padding-right: 0.9rem;
+  }
+  .addbtn:hover{
+    background-color: #c0c0c0
+}
+  .plusicon{
+      display: inline-block;
+      width: 1.2rem;
+      margin-right: 0.4rem;
+  }
+  .component{
+      margin-bottom: 2rem;
   }

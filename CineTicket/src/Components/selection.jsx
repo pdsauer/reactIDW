@@ -26,7 +26,7 @@ export default class MovieSelection extends React.Component {
 
     }
     render() {
-        return (<div>
+        return (<div className="component">
             <section className="headline">
                 <h2>Choose your <span className="highlightWord">movie</span></h2>
             </section><section id="movieSelect">
