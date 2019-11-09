@@ -8,12 +8,22 @@ export default class MovieSelection extends React.Component {
   }
 
   addRow = () => {
-    this.state.rowcount++;
-    this.reihen();
+    
+    this.setState((state) => {
+        return {rowcount: state.rowcount + 1}
+    }, () => {
+        this.reihen();
+    });
+    
   };
   removeRow = () => {
-    this.state.rowcount--;
-    this.reihen();
+    
+    this.setState((state) => {
+        return {rowcount: state.rowcount - 1}
+    }, ()=> {
+        this.reihen();
+    });
+    
   }
   componentDidMount(){
       this.reihen();
@@ -45,9 +55,6 @@ export default class MovieSelection extends React.Component {
   }
 }
 class AddButton extends React.Component {
-  constructor() {
-    super();
-  }
   render() {
     return (
       <div>
@@ -70,7 +77,7 @@ class InputRow extends React.Component {
         this.state = { value: ""};
       }
     componentDidMount(){
-        if (1 != this.props.counter){
+        if (1 !== this.props.counter){
             console.log("minus Button, counter: "+ this.props.counter);
             let value = <div className="flex-center">
             <img className="icon pointer" src="/minus icon.png" alt="delete" onClick={this.props.removeRow} />
