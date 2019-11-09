@@ -13,7 +13,7 @@ export default class MovieSelection extends React.Component {
                 
             </section>
 
-            <section class="flexer">  
+            <section className="flexer">  
                 <div>      
                     <label htmlFor="rowDropdown">row</label>
                     <select name="rowDropdown" id="rowDropdown">
