@@ -22,7 +22,12 @@ class App extends React.Component {
           </div>
         </nav>
         <section id="content" className="contentArea">
-
+        <div className="leftrow">
+          
+          </div>
+          <div className="rightrow">
+          
+          </div>
           <MovieSelection/>
           <SeatSelection/>
           <TicketSelection/> 
