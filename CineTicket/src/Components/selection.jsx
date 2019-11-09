@@ -30,19 +30,19 @@ export default class MovieSelection extends React.Component {
             <section className="headline">
                 <h2>Choose your <span className="highlightWord">movie</span></h2>
             </section><section id="movieSelect">
-                <div className="select-wrapper">
+                <div className="select-wrapper mb">
                     <select name="movie" onChange={this.movieOnChange}>
                         <option value="Joker3D">Joker 3D</option>
                         <option value="Joker">Joker</option>
                     </select>
                 </div>
-                <div className="select-wrapper">
+                <div className="select-wrapper mb">
                 <select name="date" onChange={this.dateOnChange}>
                     <option value="08.11.2019">08.11.2019</option>
                     <option value="12.11.2019">12.11.2019</option>
                 </select>
                 </div>
-                <div className="select-wrapper">
+                <div className="select-wrapper mb">
                 <select name="cinema" onChange={this.cinemaOnChange}>
                     <option value="Kino 09">Kino 09</option>
                     <option value="Kino 12">Kino 12</option>
