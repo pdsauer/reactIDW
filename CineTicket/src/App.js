@@ -14,7 +14,7 @@ class App extends React.Component {
     this.state = { 
       filmname: 'Joker 3D',
       price: 9.80,
-      count: 4,
+      count: 1,
       date: '24.02.2019'
      };
   }
@@ -25,7 +25,7 @@ class App extends React.Component {
   }
   changeCount = (count) => {
     this.setState({count: count});
-    
+    console.log('changed');
   }
   changeDate = (date) => {
     this.setState({date: date})

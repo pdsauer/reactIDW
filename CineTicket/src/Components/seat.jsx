@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-export default class MovieSelection extends React.Component {
+export default class SeatSelection extends React.Component {
   constructor(props) {
     super();
     this.state = { rowcount: 1, html: ""};
@@ -13,6 +13,7 @@ export default class MovieSelection extends React.Component {
         return {rowcount: state.rowcount + 1}
     }, () => {
         this.reihen();
+        this.props.changeCount(this.state.rowcount);
     });
     
   };
@@ -22,6 +23,7 @@ export default class MovieSelection extends React.Component {
         return {rowcount: state.rowcount - 1}
     }, ()=> {
         this.reihen();
+        this.props.changeCount(this.state.rowcount);
     });
     
   }
@@ -78,12 +80,10 @@ class InputRow extends React.Component {
       }
     componentDidMount(){
         if (1 !== this.props.counter){
-            console.log("minus Button, counter: "+ this.props.counter);
             let value = <div className="flex-center">
             <img className="icon pointer" src="/minus icon.png" alt="delete" onClick={this.props.removeRow} />
             </div>;
             this.setState({"value":value});
-            console.log(value);
         }
         
     }
