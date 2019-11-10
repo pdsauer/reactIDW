@@ -17,7 +17,7 @@ class App extends React.Component {
       filmname: 'Joker 3D',
       price: 9.80,
       count: 1,
-      date: '24.02.2019'
+      date: '08.11.2019'
      };
   }
 
