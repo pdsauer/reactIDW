@@ -10,13 +10,18 @@ export default class TicketSelection extends React.Component {
           </h2>
           <div>
               <table id="paymenttable">
+                <tbody>
                 <tr>
-                    <td><strong>Filmname</strong> </td>
-                    <td>32.44€</td>
+                  <td>{this.props.count + 'x '}<strong>{this.props.filmname}</strong> </td>
+                  <td>{this.props.price} &euro;</td>
                 </tr>
+                </tbody>
                 <tfoot>
+                  <tr>
                     <td></td>
-                    <td>32.44€</td>
+                  <td>{this.props.count * this.props.price} &euro;</td>
+
+                  </tr>
                 </tfoot>
               </table>
             <button className="btn buybtncolor pointer" onClick={this.props.addRow}>

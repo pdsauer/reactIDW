@@ -6,11 +6,22 @@ import MovieSelection from './Components/selection';
 import SeatSelection from './Components/seat';
 import TicketSelection from './Components/ticket';
 import Cinema from './Components/cinema';
+import API from './API';
 
 class App extends React.Component {
   constructor() {
     super();
-    this.state = { product: { name: "Nicht Paul", preis: 3 } };
+    this.state = { tickets: {filmname: 'Joker 3D', price: 9.80, count: 4, date: '24.02.2019'} };
+  }
+
+  changeMovie = (name) => {
+    //this.setState({tickets: {filmname: name}});
+  }
+  changeCount = (count) => {
+    // this.setState({tickets: {count: count}});
+  }
+  changeDate = (date) => {
+    // this.setState({tickets: {count: date}})
   }
   render() {
     return (
@@ -24,10 +35,10 @@ class App extends React.Component {
         </nav>
         <section id="content" className="contentArea flexer">
         <div className="leftrow">
-           <MovieSelection/>
-          <SeatSelection/>
-          <TicketSelection/> 
-          
+           <MovieSelection changeMovie={this.changeMovie()}/>
+          <SeatSelection changeCount={this.changeCount()}/>
+          <TicketSelection filmname={this.state.tickets.filmname} price={this.state.tickets.price} count={this.state.tickets.count} date={this.state.tickets.date}/> 
+          <API/>
           </div>
           <div className="rightrow">
           <Cinema/>

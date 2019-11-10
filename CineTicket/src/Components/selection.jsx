@@ -4,18 +4,19 @@ import ReactDOM from 'react-dom';
 export default class MovieSelection extends React.Component {
     constructor(props) {
         super();
-        this.state = { bestellung: { 'movie': '123', 'date': '123', 'cinema': '123' } };
+        //this.state = { bestellung: { 'movie': '123', 'date': '123', 'cinema': '123' } };
     }
     movieOnChange = (event) => {
-        Object.assign(this.state.bestellung, { 'movie': event.target.value })
+        // Object.assign(this.state.bestellung, { 'movie': event.target.value })
+        this.props.changeMovie(this.state.bestellung.movie);
         console.log(this.state.bestellung);
     }
     dateOnChange = (event) => {
-        Object.assign(this.state.bestellung, { 'date': event.target.value })
+        // Object.assign(this.state.bestellung, { 'date': event.target.value })
         console.log(this.state.bestellung);
     }
     cinemaOnChange = (event) => {
-        Object.assign(this.state.bestellung, { 'cinema': event.target.value })
+        // Object.assign(this.state.bestellung, { 'cinema': event.target.value })
         console.log(this.state.bestellung);
     }
     absenden = (event) => {

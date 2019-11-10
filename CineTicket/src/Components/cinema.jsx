@@ -34,7 +34,7 @@ export default class Cinema extends React.Component{
     render(){
         return(
 
-            <div class="canvaswrapper">
+            <div className="canvaswrapper">
 <canvas id="cinema-canvas" width="600" height="900"></canvas>
 
             </div>
