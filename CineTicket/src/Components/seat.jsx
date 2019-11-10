@@ -58,7 +58,7 @@ class AddButton extends React.Component {
   render() {
     return (
       <div>
-        <button className="addbtn pointer" onClick={this.props.addRow}>
+        <button className="btn addbtncolor pointer" onClick={this.props.addRow}>
           <img
             className=" pointer plusicon"
             src="/plus icon.png"

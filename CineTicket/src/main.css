@@ -139,27 +139,35 @@ width: 4rem;
 margin-right: 2rem;
   }
 
-  .addbtn{
+  .btn{
       font-size: 1.5rem;
       margin-top: 1rem;
       outline: none;
       border: none;
       text-decoration: none;
-      background-color: var(--lightgrey);
       display: flex;
       justify-content: center;
       align-items: center;
       padding-left: 0.9rem;
       padding-right: 0.9rem;
   }
-  .addbtn:hover{
-    background-color: #c0c0c0
+
+  .addbtbcolor{
+    background-color: var(--lightgrey);
+  }
+  .addbtncolor:hover, .buybtncolor:hover{
+    background-color: #a0a0a0
 }
   .plusicon{
       display: inline-block;
       width: 1.2rem;
       margin-right: 0.4rem;
   }
+  .cardicon{
+    display: inline-block;
+    width: 1.6rem;
+    margin-right: 0.4rem;
+}
   .component{
       margin-bottom: 2rem;
   }
@@ -167,8 +175,22 @@ margin-right: 2rem;
       text-align: right;
   }
   #cinema-canvas{
-     
       width: 23rem;
       max-width: 100%;
   }
- 
+
+  .buybtncolor{
+    background-color: var(--maincolor);
+  }
+ #paymenttable{
+     font-size: 1.3rem;
+     border-collapse: collapse;
+ }
+ #paymenttable tr td:first-child {
+     min-width: 8rem;
+ }
+ #paymenttable tfoot{
+     border-top: 3px solid var(--maincolor);
+     color: var(--maincolor);
+     font-weight: bold;
+ }
