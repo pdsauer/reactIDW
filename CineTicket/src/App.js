@@ -11,17 +11,25 @@ import API from './API';
 class App extends React.Component {
   constructor() {
     super();
-    this.state = { tickets: {filmname: 'Joker 3D', price: 9.80, count: 4, date: '24.02.2019'} };
+    this.state = { 
+      filmname: 'Joker 3D',
+      price: 9.80,
+      count: 4,
+      date: '24.02.2019'
+     };
   }
 
   changeMovie = (name) => {
-    //this.setState({tickets: {filmname: name}});
+      this.setState({filmname: name});
+      
   }
   changeCount = (count) => {
-    // this.setState({tickets: {count: count}});
+    this.setState({count: count});
+    
   }
   changeDate = (date) => {
-    // this.setState({tickets: {count: date}})
+    this.setState({date: date})
+  
   }
   render() {
     return (
@@ -35,9 +43,11 @@ class App extends React.Component {
         </nav>
         <section id="content" className="contentArea flexer">
         <div className="leftrow">
-           <MovieSelection changeMovie={this.changeMovie()}/>
-          <SeatSelection changeCount={this.changeCount()}/>
-          <TicketSelection filmname={this.state.tickets.filmname} price={this.state.tickets.price} count={this.state.tickets.count} date={this.state.tickets.date}/> 
+           <MovieSelection changeMovie={this.changeMovie}/>
+
+          <SeatSelection changeCount={this.changeCount}/>
+
+          <TicketSelection filmname={this.state.filmname} price={this.state.price} count={this.state.count} date={this.state.date}/> 
           <API/>
           </div>
           <div className="rightrow">
