@@ -18,8 +18,8 @@ export default class Cinema extends React.Component{
             ctx.lineTo(canvasHeight * (0.89), canvasWidth * (1/30));
             ctx.stroke();
 
-            ctx.font = "30px Arial";
-            ctx.fillText("Screen", canvasWidth * (0.35), canvasHeight * 0.14);
+            ctx.font =  canvasHeight * 0.08 + "px Arial";
+            ctx.fillText("Screen", canvasWidth * (0.30), canvasHeight * 0.14);
 
             for(let i = 0; i < 16; i++){
 

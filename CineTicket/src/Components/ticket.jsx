@@ -13,13 +13,13 @@ export default class TicketSelection extends React.Component {
                 <tbody>
                 <tr>
                   <td>{this.props.count + 'x '}<strong>{this.props.filmname}</strong> </td>
-                  <td>{this.props.price} &euro;</td>
+                  <td>{(this.props.price).toFixed(2)} &euro;</td>
                 </tr>
                 </tbody>
                 <tfoot>
                   <tr>
                     <td></td>
-                  <td>{this.props.count * this.props.price} &euro;</td>
+                  <td>{(this.props.count * this.props.price).toFixed(2)} &euro;</td>
 
                   </tr>
                 </tfoot>
