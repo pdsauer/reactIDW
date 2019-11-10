@@ -53,7 +53,7 @@ class App extends React.Component {
                      <div className="flexer">
                         <div className="leftrow">
 
-                            <MovieSelection changeMovie={this.changeMovie}/>
+                            <MovieSelection changeMovie={this.changeMovie} changeDate={this.changeDate} />
                             <SeatSelection changeCount={this.changeCount}/>
                             <TicketSelection filmname={this.state.filmname} price={this.state.price} count={this.state.count} date={this.state.date}/> 
                             <API/>

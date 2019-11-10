@@ -12,10 +12,10 @@ export default class MovieSelection extends React.Component {
     }
 
     dateOnChange = (event) => {
-        //this.props.changeDate(event.target.value);
+        this.props.changeDate(event.target.value);
     }
     cinemaOnChange = (event) => {
-        //this.props.changeCinema(event.target.value);
+        this.props.changeCinema(event.target.value);
     }
     absenden = (event) => {
         event.preventDefault();
