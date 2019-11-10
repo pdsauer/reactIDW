@@ -4,20 +4,18 @@ import ReactDOM from 'react-dom';
 export default class MovieSelection extends React.Component {
     constructor(props) {
         super();
-        //this.state = { bestellung: { 'movie': '123', 'date': '123', 'cinema': '123' } };
     }
     movieOnChange = (event) => {
-        // Object.assign(this.state.bestellung, { 'movie': event.target.value })
-        this.props.changeMovie(this.state.bestellung.movie);
-        console.log(this.state.bestellung);
+
+        this.props.changeMovie(event.target.value);
+        //console.log(this.state.bestellung);
     }
+
     dateOnChange = (event) => {
-        // Object.assign(this.state.bestellung, { 'date': event.target.value })
-        console.log(this.state.bestellung);
+        //this.props.changeDate(event.target.value);
     }
     cinemaOnChange = (event) => {
-        // Object.assign(this.state.bestellung, { 'cinema': event.target.value })
-        console.log(this.state.bestellung);
+        //this.props.changeCinema(event.target.value);
     }
     absenden = (event) => {
         event.preventDefault();
@@ -32,23 +30,29 @@ export default class MovieSelection extends React.Component {
                 <h2>Choose your <span className="highlightWord">movie</span></h2>
             </section><section id="movieSelect">
                 <div className="select-wrapper mb">
+
                     <select name="movie" onChange={this.movieOnChange}>
                         <option value="Joker3D">Joker 3D</option>
                         <option value="Joker">Joker</option>
                     </select>
+
                 </div>
                 <div className="select-wrapper mb">
-                <select name="date" onChange={this.dateOnChange}>
-                    <option value="08.11.2019">08.11.2019</option>
-                    <option value="12.11.2019">12.11.2019</option>
-                </select>
+
+                    <select name="date" onChange={this.dateOnChange}>
+                        <option value="08.11.2019">08.11.2019</option>
+                        <option value="12.11.2019">12.11.2019</option>
+                    </select>
+
                 </div>
                 <div className="select-wrapper mb">
-                <select name="cinema" onChange={this.cinemaOnChange}>
-                    <option value="Kino 09">Kino 09</option>
-                    <option value="Kino 12">Kino 12</option>
-                </select>
-</div>
+
+                    <select name="cinema" onChange={this.cinemaOnChange}>
+                        <option value="Kino 09">Kino 09</option>
+                        <option value="Kino 12">Kino 12</option>
+                    </select>
+
+                </div>
             </section></div>);
     }
 }
